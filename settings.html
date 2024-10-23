@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="page flex min-h-screen">
+        <div class="sidebar bg-white p-5 relative w-64">
+            <h3 class="relative text-center ">Elzero</h3>
+            <ul >
+                <li>
+                  <a class="flex items-center text-sm text-black rounded-md p-2.5 duration-300 mb-1" href="index.html">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <span class="ml-2.5">Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="active flex items-center text-sm text-black rounded-md p-2.5 duration-300 mb-1" href="settings.html">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span class="ml-2.5">Settings</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center text-sm text-black rounded-md p-2.5 duration-300 mb-1" href="profile.html">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span class="ml-2.5">Profile</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center text-sm text-black rounded-md p-2.5 duration-300 mb-1" href="projects.html">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span class="ml-2.5">Projects</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center text-sm text-black rounded-md p-2.5 duration-300 mb-1" href="courses.html">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span class="ml-2.5">Courses</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center text-sm text-black rounded-md p-2.5 duration-300 mb-1" href="friends.html">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span class="ml-2.5">Friends</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center text-sm text-black rounded-md p-2.5 duration-300 mb-1" href="files.html">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <span class="ml-2.5">Files</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center text-sm text-black rounded-md p-2.5 duration-300 mb-1" href="plans.html">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span class="ml-2.5">Plans</span>
+                  </a>
+                </li>
+              </ul>
+        </div>
+        <div class="content w-full overflow-hidden">
+          <!-- Start Header  -->
+          <div class="head bg-white p-4 flex justify-between items-center ">
+            <div class="search relative">
+              <input class="p-2.5 rounded-lg ml-1.5 pl-7 w-40 duration-300 focus:w-52 " type="search" placeholder="Type A Keyword">
+            </div>
+            <div class="icon flex items-center">
+              <span class="notification relative">
+                <i class="fa-regular fa-bell fa-lg"></i>
+              </span>
+              <img class="w-8 h-8 ml-4" src="img/avatar.png" alt="">
+            </div>
+          </div>
+          <!-- End Header  -->
+          <h1 class="relative mt-5 mb-10 mx-5 font-bold ">Settings</h1>
+          <div class="settings-page grid gap-5 m-5">
+            <div class="site-control p-5 bg-white rounded-lg">
+                <h2 class="mb-2.5 font-bold">Site Control</h2>
+                <p class="mb-5">Control The Website If There Is Maintenance</p>
+                <div class="mb-4 flex items-center justify-between">
+                    <div>
+                        <span>Website Control</span>
+                        <p class="mt-1">Open/Close Website And Type The Reason</p>
+                    </div>
+                    <div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                </div>
+                <textarea class="p-2.5 rounded-md block w-full resize-none" placeholder="Close Message Content"></textarea>
+            </div>
+            <div class="general-info p-5 bg-white rounded-lg">
+                <h2 class="mb-2.5 font-bold">General Info</h2>
+                <p class="mb-5">General Information About Your Account</p>
+                <div class="mb-4">
+                    <label class="block mb-2.5" for="first">First Name</label>
+                    <input class="p-2.5 rounded-md block w-full" type="text" id="first" placeholder="First Name">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-1" for="last">Last Name</label>
+                    <input class="p-2.5 rounded-md block w-full" type="text" id="last" placeholder="Last Name">
+                </div>
+                <div>
+                    <label class="block mb-1" for="email">Email</label>
+                    <input class="p-2.5 rounded-md block w-full mr-2.5 cursor-no-drop inline-flex" type="email" id="email" value="o@nn.sa" >
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <div class="security-info p-5 bg-white rounded-lg">
+                <h2 class="mb-2.5 font-bold">Security Info</h2>
+                <p class="mb-5">Security Information About Your Account</p>
+                <div class="mb-4 flex items-center justify-between pb-4">
+                    <div>
+                        <span>Password</span>
+                        <p class="mt-1">Last Change On 25/10/2021</p>
+                    </div>
+                    <a class="py-1 px-2.5 rounded-md text-white" href="#">Change</a>
+                </div>
+                <div class="mb-4 flex items-center justify-between pb-4">
+                    <div>
+                        <span>Two-Factor Authentication</span>
+                        <p class="mt-1">Enable/Disable The Feature</p>
+                    </div>
+                    <label>
+                        <input class="toggle-checkbox" type="checkbox" checked />
+                        <div class="toggle-switch"></div>
+                    </label>
+                </div>
+                <div class="mb-4 flex items-center justify-between pb-4">
+                    <div>
+                        <span>Devices</span>
+                        <p class="mt-1">Check The Login Devices List</p>
+                    </div>
+                    <a class="py-1 px-2.5 rounded-md text-black" href="#">Devices</a>
+                </div>
+            </div>
+            <div class="social-info p-5 bg-white rounded-lg">
+              <h2 class="mb-2.5 font-bold">Social Info</h2>
+              <p class="mb-5">Social Media Information</p>
+              <div class="mb-4 flex items-center">
+                <i class="fa-brands fa-twitter w-10 h-10 flex items-center justify-center duration-300 rounded-l-md"></i>
+                <input class="w-full h-10 pl-2.5 rounded-r-md" type="text" placeholder="Twitter Username">
+              </div>
+              <div class="mb-4 flex items-center">
+                <i class="fa-brands fa-facebook-f w-10 h-10 flex items-center justify-center duration-300 rounded-l-md"></i>
+                <input class="w-full h-10 pl-2.5 rounded-r-md" type="text" placeholder="Facebook Username">
+              </div>
+              <div class="mb-4 flex items-center">
+                <i class="fa-brands fa-linkedin w-10 h-10 flex items-center justify-center duration-300 rounded-l-md"></i>
+                <input class="w-full h-10 pl-2.5 rounded-r-md" type="text" placeholder="Linkedin Username">
+              </div>
+              <div class="flex items-center">
+                <i class="fa-brands fa-youtube w-10 h-10 flex items-center justify-center duration-300 rounded-l-md"></i>
+                <input class="w-full h-10 pl-2.5 rounded-r-md" type="text" placeholder="Youtube Username">
+              </div>
+            </div>
+            <div class="widgets-control p-5 bg-white rounded-lg"> 
+              <h2 class="mb-2.5 font-bold">Widgets Control</h2>
+              <p class="mb-5">Show/Hide Widgets</p>
+              <div class="mb-4 flex items-center">
+                <input type="checkbox" id="one" checked>
+                <label class="cursor-pointer pl-7 relative" for="one">Quick Draft</label>
+              </div>
+              <div class="mb-4 flex items-center">
+                <input type="checkbox" id="two" checked>
+                <label class="cursor-pointer pl-7 relative" for="two">Yearly Targets</label>
+              </div>
+              <div class="mb-4 flex items-center">
+                <input type="checkbox" id="three" checked>
+                <label class="cursor-pointer pl-7 relative" for="three">Tickets Statistics</label>
+              </div>
+              <div class="mb-4 flex items-center">
+                <input type="checkbox" id="four" checked>
+                <label class="cursor-pointer pl-7 relative" for="four">Latest News</label>
+              </div>
+              <div class="mb-4 flex items-center">
+                <input type="checkbox" id="five">
+                <label class="cursor-pointer pl-7 relative" for="five">Latest Tasks</label>
+              </div>
+              <div class="mb-4 flex items-center">
+                <input type="checkbox" id="six" checked>
+                <label class="cursor-pointer pl-7 relative" for="six">Top Search Items</label>
+              </div>
+            </div>
+            <div class="backup-manager p-5 bg-white rounded-lg">
+              <h2 class="mb-2.5 font-bold">Backup Manager</h2>
+              <p class="mb-10">Control Backup Time And Location</p>
+              <div class="flex items-center mb-4">
+                <input type="radio" name="time" id="daily" checked>
+                <label class="cursor-pointer pl-7 relative" for="daily">Daily</label>
+              </div>
+              <div class="flex items-center mb-4">
+                <input type="radio" name="time" id="weekly" checked>
+                <label class="cursor-pointer pl-7 relative" for="weekly">Weekly</label>
+              </div>
+              <div class="flex items-center mb-4">
+                <input type="radio" name="time" id="monthly">
+                <label class="cursor-pointer pl-7 relative" for="monthly">Monthly</label>
+              </div>
+              <div class="servers flex items-center text-center gap-1">
+                <input type="radio" name="servers" id="server-one">
+                <div class="mb-4 w-full rounded-lg">
+                  <label class="block m-4 cursor-pointer" for="server-one">
+                    <i class="fa-solid fa-server block mb-2.5"></i>
+                    Megaman
+                  </label>
+                </div>
+                <input type="radio" name="servers" id="server-two">
+                <div class="mb-4 w-full rounded-lg">
+                  <label class="block m-4 cursor-pointer" for="server-two">
+                    <i class="fa-solid fa-server block mb-2.5"></i>
+                    Zero
+                  </label>
+                </div>
+                <input type="radio" name="servers" id="server-three">
+                <div class="mb-4 w-full rounded-lg">
+                  <label class="block m-4 cursor-pointer" for="server-three">
+                    <i class="fa-solid fa-server block mb-2.5"></i>
+                    Sigma
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
